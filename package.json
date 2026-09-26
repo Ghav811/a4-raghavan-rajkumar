@@ -1,0 +1,25 @@
+{
+  "name": "a4-creativecoding",
+  "version": "1.0.0",
+  "description": "Assignment 4 - Creative Coding: Interactive Multimedia Experiences\r ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs-4241-26a/a4-creativecoding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/cs-4241-26a/a4-creativecoding/issues"
+  },
+  "homepage": "https://github.com/cs-4241-26a/a4-creativecoding#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

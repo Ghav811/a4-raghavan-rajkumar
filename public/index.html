@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Smoke Trails</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Smoke Trails</h1>
+            <p>Change the flow, and then move your pointer to the canvas to make a gust</p>
+        </header>
+        <main>
+            <section aria-label="Smoke simulation">
+                <canvas 
+                    id = "smokeCanvas"
+                    width = "900"
+                    height = "500"
+                    aria-label = "Animated Smoke Simulation">
+                </canvas>
+            </section>
+            <section aria-labelledby="controls-heading">
+                <h2 id = "controls-heading">Simulation controls</h2>
+                <label for = "wind">
+                    Wind Speed: <output id = "windValue">40</output>
+                </label>
+                <input id="wind" type="range" min="0" max="100" value="40">
+
+                <label for="turbulence">
+                    Turbulence: <output id="turbulenceValue">50</output>
+                </label>
+                <input id="turbulence" type="range" min="0" max="100" value="50">
+
+                <label for="density">
+                    Particle density: <output id="densityValue">50</output>
+                </label>
+                <input id="density" type="range" min="10" max="100" value="50">
+
+                <label for="trail">
+                    Trail persistence: <output id="trailValue">60</output>
+                </label>
+                <input id="trail" type="range" min="0" max="100" value="60">
+
+                <h3>Color palette</h3>
+                <button class="palette-button" data-color="ember" type="button">Ember</button>
+                <button class="palette-button" data-color="arctic" type="button">Arctic</button>
+                <button class="palette-button" data-color="violet" type="button">Violet</button>
+
+                <div>
+                    <button id="pauseButton" type="button">Pause</button>
+                    <button id="resetButton" type="button">Reset</button>
+                </div>
+            </section>
+
+            <section aria-labelledby="instructions-heading">
+                <h2 id="instructions-heading">How to use</h2>
+                <p>
+                    Adjust the sliders to change the smoke. Move your pointer across the
+                    canvas to push particles and create a gust. Use Pause to stop the
+                    animation, or Reset to restore the starting values.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
