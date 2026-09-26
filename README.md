@@ -1,6 +1,6 @@
 # Smoke Trails
 
-[View the live project](ADD-YOUR-HOSTED-LINK-HERE)
+https://a4-raghavan-rajkumar.onrender.com/
 
 Smoke Trails is an game where you can visualize a smoke plume and change how it flows using sliders and your mouse.
 ## Challenges
